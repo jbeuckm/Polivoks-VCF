@@ -4,7 +4,7 @@
 (This file generated from the board:)
 (.../Polyvoks VCF/eagle/polyvoks_vcf.brd)
 (Current profile is .../pcbgcode.repo/profiles/mach.pp  )
-(This file generated 12/30/15 11:23 PM)
+(This file generated 1/1/16 12:23 AM)
 (Settings from pcb-machine.h)
 (spindle on time = 0.0000)
 (spindle speed = 15000.0000)
@@ -37,10 +37,10 @@ G01 X-0.0600 Y-0.0400 F10
 G01 X-3.9300 Y-0.0400 
 G01 X-4.0400 Y0.0800  
 G01 X-4.0400 Y0.6400  
-G01 X-3.9500 Y0.7500  
-G01 X-3.9500 Y2.5000  
-G01 X-3.4400 Y3.0600  
-G01 X-0.2700 Y3.0600  
+G01 X-3.9100 Y0.7200  
+G01 X-3.9100 Y2.1500  
+G01 X-2.5700 Y2.9200  
+G01 X-1.6000 Y2.9200  
 G01 X0.0400  Y2.7600  
 G01 X0.0400  Y0.0500  
 G00 Z1.0000  
