@@ -13175,7 +13175,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <part name="P-1" library="supply1" deviceset="-12V" device=""/>
 <part name="P-2" library="supply1" deviceset="-12V" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="10k"/>
-<part name="C10" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
+<part name="C10" library="rcl" deviceset="C-US" device="075-032X103" value="100n"/>
 <part name="C11" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
 <part name="C12" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
 <part name="C13" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
@@ -13240,7 +13240,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <part name="R19" library="rcl" deviceset="R-US_" device="0207/10" value="100k"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0207/10" value="10k"/>
 <part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="10k"/>
-<part name="R22" library="rcl" deviceset="R-US_" device="0207/12" value="100k"/>
+<part name="R22" library="rcl" deviceset="R-US_" device="0207/10" value="100k"/>
 <part name="R23" library="rcl" deviceset="R-US_" device="0207/10" value="100k"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
@@ -13289,7 +13289,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <instance part="IC2" gate="G$1" x="50.8" y="15.24"/>
 <instance part="R3" gate="G$1" x="-10.16" y="58.42" rot="R90"/>
 <instance part="GND1" gate="1" x="-10.16" y="48.26"/>
-<instance part="GND2" gate="1" x="0" y="48.26"/>
+<instance part="GND2" gate="1" x="-2.54" y="48.26"/>
 <instance part="R4" gate="G$1" x="-2.54" y="71.12" rot="R180"/>
 <instance part="R5" gate="G$1" x="12.7" y="71.12" rot="R180"/>
 <instance part="IC3" gate="A" x="50.8" y="81.28"/>
@@ -13311,7 +13311,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <instance part="IC4" gate="G$1" x="91.44" y="15.24"/>
 <instance part="GND9" gate="1" x="40.64" y="-5.08"/>
 <instance part="GND10" gate="1" x="81.28" y="-5.08"/>
-<instance part="RES" gate="G$1" x="22.86" y="-10.16" rot="MR90"/>
+<instance part="RES" gate="G$1" x="22.86" y="-10.16" rot="R90"/>
 <instance part="R10" gate="G$1" x="33.02" y="5.08" rot="R90"/>
 <instance part="R11" gate="G$1" x="33.02" y="20.32" rot="R90"/>
 <instance part="R12" gate="G$1" x="68.58" y="15.24" rot="R180"/>
@@ -13513,8 +13513,8 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <segment>
 <pinref part="IC1" gate="B" pin="+IN"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="5.08" y1="63.5" x2="0" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="0" y1="63.5" x2="0" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="63.5" x2="-2.54" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="63.5" x2="-2.54" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="A" pin="+IN"/>
@@ -13555,11 +13555,6 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <wire x1="-12.7" y1="5.08" x2="-12.7" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RES" gate="G$1" pin="A"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="10.16" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="-2.54" x2="76.2" y2="2.54" width="0.1524" layer="91"/>
@@ -13584,6 +13579,11 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <pinref part="LP_OUT" gate="G$1" pin="RING"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="172.72" y1="-2.54" x2="172.72" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RES" gate="G$1" pin="E"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="17.78" y1="-10.16" x2="10.16" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -13649,11 +13649,11 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="71.12" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="B" pin="-IN"/>
-<wire x1="5.08" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="58.42" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
-<junction x="5.08" y="71.12"/>
+<wire x1="2.54" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="58.42" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="58.42" x2="2.54" y2="71.12" width="0.1524" layer="91"/>
+<junction x="2.54" y="71.12"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -13756,9 +13756,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <pinref part="IC2" gate="G$1" pin="OUT"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="15.24" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="RES" gate="G$1" pin="E"/>
 <wire x1="60.96" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-10.16" x2="60.96" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-10.16" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 <junction x="60.96" y="15.24"/>
 <pinref part="C1" gate="G$1" pin="+"/>
@@ -13766,6 +13764,8 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <wire x1="73.66" y1="50.8" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="22.86" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="RES" gate="G$1" pin="A"/>
+<wire x1="27.94" y1="-10.16" x2="60.96" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
