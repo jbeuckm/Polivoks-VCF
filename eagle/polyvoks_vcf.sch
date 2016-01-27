@@ -13399,7 +13399,6 @@ drill 1.1 mm</description>
 <part name="R16" library="rcl" deviceset="R-US_" device="0207/10" value="470k"/>
 <part name="INPUT" library="erthenvar" deviceset="AUDIO-JACK" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="R17" library="rcl" deviceset="R-US_" device="0207/10" value="1k"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="IC5" library="linear" deviceset="TL072" device="P"/>
@@ -13500,7 +13499,6 @@ drill 1.1 mm</description>
 <instance part="R16" gate="G$1" x="0" y="12.7" rot="R180"/>
 <instance part="INPUT" gate="G$1" x="-20.32" y="7.62" rot="MR180"/>
 <instance part="GND13" gate="1" x="-12.7" y="-2.54"/>
-<instance part="GND14" gate="1" x="-12.7" y="-30.48"/>
 <instance part="R17" gate="G$1" x="76.2" y="7.62" rot="R90"/>
 <instance part="GND15" gate="1" x="76.2" y="-5.08"/>
 <instance part="IC5" gate="A" x="144.78" y="48.26"/>
@@ -13709,11 +13707,6 @@ drill 1.1 mm</description>
 <wire x1="40.64" y1="83.82" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="FREQ" gate="G$1" pin="A"/>
-<wire x1="30.48" y1="50.8" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R26" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="CV_IN" gate="G$1" pin="RING"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="-12.7" y1="27.94" x2="-12.7" y2="22.86" width="0.1524" layer="91"/>
@@ -13738,7 +13731,12 @@ drill 1.1 mm</description>
 <segment>
 <pinref part="INPUT" gate="G$1" pin="RING"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="-12.7" y1="5.08" x2="-12.7" y2="0" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="2.54" x2="-12.7" y2="0" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-25.4" x2="-7.62" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="2.54" x2="-12.7" y2="2.54" width="0.1524" layer="91"/>
+<junction x="-12.7" y="2.54"/>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
@@ -14090,14 +14088,6 @@ drill 1.1 mm</description>
 <wire x1="2.54" y1="-25.4" x2="7.62" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
-<segment>
-<pinref part="R27" gate="G$1" pin="2"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="-7.62" y1="-25.4" x2="-12.7" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-25.4" x2="-12.7" y2="-27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="R28" gate="G$1" pin="1"/>
@@ -14121,6 +14111,13 @@ drill 1.1 mm</description>
 <wire x1="35.56" y1="-20.32" x2="40.64" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="-20.32" x2="40.64" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="40.64" y="-17.78"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="FREQ" gate="G$1" pin="A"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="50.8" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
